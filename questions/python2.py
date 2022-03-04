@@ -258,7 +258,7 @@ def eight(string,  a):
 
     return newstring
 
-print(eight("Hello", 3))
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -278,7 +278,14 @@ print(eight("Hello", 3))
 
 
 def nine(string1, string2):
+    for char1 in string1:
+        for char2 in string2:
+            if char2 in string1:
+                return True
+
     return False
+
+print (nine("computer", "python"))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
