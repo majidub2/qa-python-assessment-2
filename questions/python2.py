@@ -223,7 +223,7 @@ def six(string):
 def seven(a, b, c):
     list = (a,b,c)
     sortedlist = sorted(list)
-    if sortedlist[2]-sortedlist[1] == sortedlist[1]-sortedlist[0]:
+    if (sortedlist[2] - sortedlist[1] == sortedlist[1] - sortedlist[0]):
         return True
     return False
 
@@ -248,7 +248,17 @@ def seven(a, b, c):
 
 
 def eight(string,  a):
-    return ""
+    if len(string)<=a:
+        return ""
+    newstring = ""
+    stringlength = len(string)
+    stringdivtw = ((stringlength - a) /2)
+    stringdivtwo = int(stringdivtw)
+    newstring = string[0:stringdivtwo] + string[-stringdivtwo:]
+
+    return newstring
+
+print(eight("Hello", 3))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
