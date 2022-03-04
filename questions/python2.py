@@ -150,7 +150,19 @@ def four(string1, string2):
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
 
+def five():
+    even_number = []
+    for i in range(5):
+        even_number.append(random.randrange(100,200,2))
+    return even_number
 
+
+             
+
+
+
+
+ 
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -173,7 +185,16 @@ def four(string1, string2):
 
 
 def six(string):
+    lowercase = string.lower()
+    lastchar= lowercase[-1]
+    secondlastchar = lowercase[-2]
+    if (lastchar == "y") and (secondlastchar == "p"):
+        return True
+
+
     return False
+
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -200,6 +221,10 @@ def six(string):
 
 
 def seven(a, b, c):
+    list = (a,b,c)
+    sortedlist = sorted(list)
+    if sortedlist[1]-sortedlist[2] == sortedlist[3]-sortedlist[2]:
+        return True
     return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
