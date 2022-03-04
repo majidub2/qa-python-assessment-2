@@ -223,9 +223,11 @@ def six(string):
 def seven(a, b, c):
     list = (a,b,c)
     sortedlist = sorted(list)
-    if sortedlist[1]-sortedlist[2] == sortedlist[3]-sortedlist[2]:
+    if sortedlist[2]-sortedlist[1] == sortedlist[1]-sortedlist[0]:
         return True
     return False
+
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
